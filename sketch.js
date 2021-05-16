@@ -27,16 +27,17 @@ monkey.addAnimation("running",monkey_running);
   
   ground = createSprite(300,290,550,5);
   ground.velocityX = -4;
+  ground.shapeColour = "red";
  ground.x = ground.width/2;
   console.log(ground.x);
-  ground.visible= false;
+ // ground.visible= false;
 }
 
 
 function draw() {
  background("white"); 
   
-if (ground.x<0){
+if (ground.x< 300){
  ground.x = ground.width/2;
   
 }
